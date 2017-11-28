@@ -1,0 +1,8 @@
+<h1><%=  @task.name %> </h1>
+
+<p>Difficulty: <%= "*" * @task.difficulty %></p>
+<p>Duration: <%= @task.duration %> minutes</p>
+<p>Done? <%= @task.done %></p>
+
+<%= link_to "Back to tasks", root_path %>
+<%= link_to "Edit task", task_edit_path %>
